@@ -53,7 +53,7 @@ Run `word2vec.ipnyb` to pre-train custom Word2Vec embeddings from our cleaned da
 There are 5 models built for this project - Logistic Regression (Logit), Convolutional Neural Network (CNN), Long Short-term Memory Network (LSTM), BERT, and ELECTRA. These models are stored separately into different notebooks with the format `models_[model name].ipnyb`. The trained models are stored in the `Models/` folder.
 > Note: Different variations were built for each model to find the best hyperparameters by testing empirically.
 
-### 7. Model Selection
+## 7. Model Selection
 The best variation of the aforementioned models can be seen in the table below. Although BERT and ELECTRA have rather comparable performances, **ELECTRA** is selected as the best performing model with our prioritisation on F1 score, as well as insights into the model architecture.
 
 | Best Model | Accuracy | Recall | Precision | F1 Score |
@@ -64,7 +64,9 @@ The best variation of the aforementioned models can be seen in the table below. 
 | BERT | 0.9757 | 0.9669 | **0.9701** | 0.9685 |
 | **ELECTRA** | **0.9792** | **0.9788** | 0.9677 | **0.9732** |
 
-## 7. Chatbot Integration
+The suicidal BERT and ELECTRA text classification models trained are available on HuggingFace at [gooohjy/suicidal-bert](https://huggingface.co/gooohjy/suicidal-bert) and [gooohjy/suicidal-electra](https://huggingface.co/gooohjy/suicidal-electra).
+
+## 8. Chatbot Integration
 Run `chatbot.ipnyb` to use the mental health chatbot, integrated with the suicidal detection model. The chatbot is based on DialoGPT and custom retrieval-based responses were integrated to suit our use case.
 
 ## Contributors
